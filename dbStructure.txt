@@ -1,0 +1,67 @@
+UserWords:
+    id:
+        WordSet:
+            id:
+                name:
+                wordCount:
+                mainList:
+   
+        WordList:
+            wordSetId:
+                id:
+                    name:
+                    wordCount:
+
+        WordClones:
+            wordId:
+                id:
+                    cloneId:
+                    listId:
+
+        Word:
+            listId:
+                id:
+                    cloneOf:
+                    value:
+                    sourceListName:
+                    practicable:
+                    validity: 0=Fetch Data, 1=Data is set, 2=Data Fetched with Error
+                    level:
+         
+        WordDef:
+            word:
+                id:
+                    title:
+                    def:
+                    boldSyns:
+                    syns:
+                    sentences:
+         
+        WordData:
+            word:
+				id:
+					des:
+					extraInfo:
+					pronunciation:
+
+	    ShortData:
+	        word:
+	            des:
+	            syns:
+	            sentences:
+
+	    Practice:
+	        word:
+	            word:
+	            synonyms:
+	            definitions:
+	            pronunciation:
+
+        LastListId:
+        LastWordSetId:
+                     
+UserData:
+    ID:
+        userEmail:
+        userName:
+      

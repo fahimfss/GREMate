@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/wordCV"
+    android:layout_margin="2dp"
+    card_view:cardBackgroundColor="@color/cardviewItem"
+    card_view:cardCornerRadius="3dp"
+    card_view:cardElevation="2dp"
+    card_view:contentPadding="6dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img"
+            android:src="@drawable/ic_green2"
+            android:layout_width="30dp"
+            android:layout_height="35dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img"
+            android:layout_centerVertical="true"
+            android:id="@+id/rl1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:maxLines="1"
+                android:id="@+id/wordValue"
+                android:textColor="@color/darkFore1"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:maxLines="1"
+                android:id="@+id/sourceListName"
+                android:layout_below="@id/wordValue"
+                android:textColor="@color/darkFore2"
+                />
+
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/moreBtn"
+            android:padding="4dp"
+            android:src="@drawable/more"
+            android:scaleType="fitCenter"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:tint="@color/darkFore1"
+            />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

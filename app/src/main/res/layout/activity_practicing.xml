@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_practicing"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.fahim.gremate.PracticingActivity"
+    android:background="@color/darkBack1"
+    >
+
+
+    <ScrollView
+        android:id="@+id/practicingSV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/questionTv"
+                android:textColor="@color/darkFore1"
+                android:textSize="20sp"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                card_view:cardBackgroundColor="@color/darkBack2"
+                card_view:cardCornerRadius="3dp"
+                card_view:cardElevation="2dp"
+                card_view:contentPadding="10dp"
+                android:clickable="true"
+                android:onClick="validateResult"
+                android:tag="0"
+                android:foreground="?android:attr/selectableItemBackground"
+                >
+                <TextView
+                    android:id="@+id/ansTV1"
+                    android:textColor="@color/darkFore1"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                card_view:cardBackgroundColor="@color/darkBack2"
+                card_view:cardCornerRadius="3dp"
+                card_view:cardElevation="2dp"
+                card_view:contentPadding="10dp"
+                android:clickable="true"
+                android:onClick="validateResult"
+                android:tag="1"
+                android:foreground="?android:attr/selectableItemBackground"
+                >
+                <TextView
+                    android:id="@+id/ansTV2"
+                    android:textColor="@color/darkFore1"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                card_view:cardBackgroundColor="@color/darkBack2"
+                card_view:cardCornerRadius="3dp"
+                card_view:cardElevation="2dp"
+                card_view:contentPadding="10dp"
+                android:clickable="true"
+                android:onClick="validateResult"
+                android:tag="2"
+                android:foreground="?android:attr/selectableItemBackground"
+                >
+                <TextView
+                    android:id="@+id/ansTV3"
+                    android:textColor="@color/darkFore1"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                card_view:cardBackgroundColor="@color/darkBack2"
+                card_view:cardCornerRadius="3dp"
+                card_view:cardElevation="2dp"
+                card_view:contentPadding="10dp"
+                android:clickable="true"
+                android:onClick="validateResult"
+                android:tag="3"
+                android:foreground="?android:attr/selectableItemBackground"
+                >
+                <TextView
+                    android:id="@+id/ansTV4"
+                    android:textColor="@color/darkFore1"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin = "5dp"
+                card_view:cardBackgroundColor="@color/darkBack2"
+                card_view:cardCornerRadius="3dp"
+                card_view:cardElevation="2dp"
+                card_view:contentPadding="10dp"
+                android:clickable="true"
+                android:onClick="validateResult"
+                android:tag="4"
+                android:foreground="?android:attr/selectableItemBackground"
+                >
+
+                <TextView
+                    android:id="@+id/ansTV5"
+                    android:textColor="@color/darkFore1"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/buttonPanel"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_centerInParent="true"
+                    android:id="@+id/viewBtn"
+                    app:backgroundTint="@color/colorPrimary"
+                    android:textColor="@color/darkFore4"
+                    android:textSize="15sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="PEEK"
+                    android:layout_height="wrap_content" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_centerInParent="true"
+                    android:id="@+id/nextBtn"
+                    app:backgroundTint="@color/colorPrimary"
+                    android:textColor="@color/darkFore4"
+                    android:textSize="15sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Next"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/diffRadioGroup"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:textColor="@color/easy"
+                    android:buttonTint="@color/easy"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Easy"
+                    android:textSize="12sp"
+                    android:tag="0"
+                    />
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:textColor="@color/normal"
+                    android:buttonTint="@color/normal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Normal"
+                    android:textSize="12sp"
+                    android:tag="1"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radio3"
+                    android:textColor="@color/hard"
+                    android:buttonTint="@color/hard"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Hard"
+                    android:textSize="12sp"
+                    android:tag="2"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radio4"
+                    android:textColor="@color/vhard"
+                    android:buttonTint="@color/vhard"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Very Hard"
+                    android:textSize="12sp"
+                    android:tag="3"
+                    />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/postAnswerInfo"
+                android:textSize="18sp"
+                android:layout_margin="5dp"
+                android:textIsSelectable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/practicingLoading"
+        android:visibility="gone"
+        android:theme="@style/ProgressBarStyle"
+        android:layout_centerInParent="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+</RelativeLayout>

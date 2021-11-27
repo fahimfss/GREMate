@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardItem"
+    android:layout_margin="3dp"
+    card_view:cardBackgroundColor="@color/cardviewItem"
+    card_view:cardCornerRadius="3dp"
+    card_view:cardElevation="2dp"
+    card_view:contentPadding="6dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    >
+
+    <RelativeLayout
+        android:layout_marginStart="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/rl1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:maxLines="1"
+                android:id="@+id/name"/>
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/delete"
+            android:padding="8dp"
+            android:src="@drawable/deltbtn"
+            android:scaleType="fitCenter"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_width="45dp"
+            android:layout_height="55dp"
+            android:backgroundTint="@color/darkBack3"
+            android:tint="@color/darkFore1"
+            />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

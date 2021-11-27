@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBack1"
+    >
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/WordOperationLL"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:id="@+id/WordOperationSV"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                android:id="@+id/WordOperationLLin"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/WordOperationWord"
+                    android:textSize="30sp"
+                    android:textColor="@color/darkFore1"
+                    android:text="WORD"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/WordOperationLLDes"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ADD DESCRIPTION"
+                        android:layout_gravity="center"
+                        android:id="@+id/WordOperationBtnDes"
+                        android:onClick="addDesc"
+                        android:backgroundTint="@color/colorAccent"
+                        android:textColor="@color/darkFore4"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/WordOperationLLDef"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ADD DEFINITION"
+                        android:layout_gravity="center"
+                        android:id="@+id/WordOperationBtnDef"
+                        android:onClick="addDefi"
+                        android:backgroundTint="@color/colorAccent"
+                        android:textColor="@color/darkFore4"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/WordOperationLLExtraInfo"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ADD Extra Information"
+                        android:layout_gravity="center"
+                        android:id="@+id/WordOperationBtnEI"
+                        android:onClick="addEi"
+                        android:backgroundTint="@color/colorAccent"
+                        android:textColor="@color/darkFore4"
+                        />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/WordOperationBtnSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:onClick="save"
+                    android:text="SAVE"
+                    android:textColor="@color/darkFore4" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

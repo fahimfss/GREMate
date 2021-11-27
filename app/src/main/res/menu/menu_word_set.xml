@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/addSet"
+        android:icon="@drawable/ic_ws_add_set"
+        app:showAsAction="ifRoom"
+        android:title="Add new word set" />
+
+    <item
+        android:id="@+id/sync"
+        app:showAsAction="never"
+        android:title="Sync" />
+
+</menu>

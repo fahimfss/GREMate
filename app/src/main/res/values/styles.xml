@@ -1,0 +1,74 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColorSecondary">@color/darkFore4</item>
+        <item name="android:textColorPrimary">@color/darkFore1</item>
+        <item name="android:textColor">@color/darkFore1</item>
+        <item name="android:titleTextStyle">@color/darkFore1</item>
+        <item name="android:itemBackground">@color/darkBack1</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionBarTheme">@color/darkFore1</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+        <item name="android:popupMenuStyle">@color/darkBack1</item>
+        <item name="colorControlHighlight">@color/ripple</item>
+        <item name="android:scrollbarThumbVertical">@android:color/darker_gray</item>
+        <item name="android:scrollbarSize">4dp</item>
+        <item name="android:actionButtonStyle">@style/myActionButtonStyle</item>
+        <item name="actionButtonStyle">@style/myActionButtonStyle</item>
+    </style>
+    <style name="MyDialog" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColorSecondary">@color/darkFore4</item>
+        <item name="android:textColorPrimary">@color/darkFore4</item>
+        <item name="android:textColor">@color/darkFore4</item>
+        <item name="android:titleTextStyle">@color/darkFore4</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/ripple</item>
+        <item name="android:scrollbarThumbVertical">@android:color/darker_gray</item>
+        <item name="android:scrollbarSize">4dp</item>
+        <item name="android:actionButtonStyle">@style/myActionButtonStyle</item>
+        <item name="actionButtonStyle">@style/myActionButtonStyle</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColorHint">@color/darkFore1</item>
+        <item name="textColorAlertDialogListItem">@color/darkFore1</item>
+        <item name="android:textColorSecondary">@color/darkFore1</item>
+        <item name="android:textColorPrimary">@color/darkFore1</item>
+        <item name="android:textColor">@color/darkFore1</item>
+        <item name="android:titleTextStyle">@color/darkFore1</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:background">@color/darkBack1</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+        <item name="android:scrollbarThumbVertical">@android:color/darker_gray</item>
+        <item name="android:scrollbarSize">4dp</item>
+        <item name="android:actionButtonStyle">@style/myActionButtonStyle</item>
+        <item name="actionButtonStyle">@style/myActionButtonStyle</item>
+    </style>
+
+    <style name="ProgressBarStyle" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="myActionButtonStyle" parent="Widget.AppCompat.ActionButton">
+        <item name="android:minWidth">10dp</item>
+        <item name="android:maxWidth">50dp</item>
+        <item name="android:paddingStart">@dimen/action_button_padding</item>
+        <item name="android:paddingEnd">@dimen/action_button_padding</item>
+    </style>
+
+    <style name="MySeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressBackgroundTint">@color/colorPrimary</item>
+        <item name="android:progressTint">@color/colorPrimary</item>
+        <item name="android:colorControlActivated">@color/Gray</item>
+    </style>
+
+</resources>

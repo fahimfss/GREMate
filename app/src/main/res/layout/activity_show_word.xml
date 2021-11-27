@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_show_word"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBack1"
+    tools:context="com.example.fahim.gremate.ShowWordActivity">
+
+    <TextView
+        android:padding="8dp"
+        android:background="@color/darkBack2"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/wordTitle"
+        android:textColor="@color/darkFore1"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textIsSelectable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/showWordSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/wordTitle">
+
+        <LinearLayout
+            android:id="@+id/showWordLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/showWordDummyFocus"
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/showWordDesLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottomline"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/showWordDescriptionRL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="toggleDescription"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/showWordDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="10dp"
+                        android:text="Description"
+                        android:textColor="@color/darkFore1"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/showWordDescriptionIB"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/darkBack1"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/up"
+                        android:tint="@color/darkFore1"
+
+                        />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/showWordDescriptionText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/darkBack2"
+                        android:padding="10dp"
+                        android:textColor="@color/darkFore1"
+                        android:textIsSelectable="true"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/showWordDefiLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottomline"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/showWordDefinitionRL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="toggleDefinition"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/showWordDefinition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="10dp"
+                        android:text="Definitions"
+                        android:textColor="@color/darkFore1"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/showWordDefinitionIB"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/darkBack1"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/up"
+                        android:tint="@color/darkFore1"
+
+                        />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/showWordDefDataLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/showWordExtraInfoLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottomline"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/showWordExtraInfoRL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="toggleExtraInfo"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/showWordExtraInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="10dp"
+                        android:text="Extra Information"
+                        android:textColor="@color/darkFore1"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/showWordExtraInfoIB"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/darkBack1"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/up"
+                        android:tint="@color/darkFore1"
+
+                        />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/showWordExtraInfoText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@color/darkBack2"
+                        android:textColor="@color/darkFore1"
+                        android:textIsSelectable="true"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/diffRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/easy"
+                    android:tag="0"
+                    android:text="Easy"
+                    android:textColor="@color/easy"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/normal"
+                    android:tag="1"
+                    android:text="Normal"
+                    android:textColor="@color/normal"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/radio3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/hard"
+                    android:tag="2"
+                    android:text="Hard"
+                    android:textColor="@color/hard"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/radio4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/vhard"
+                    android:tag="3"
+                    android:text="Very Hard"
+                    android:textColor="@color/vhard"
+                    android:textSize="12sp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/loadWordPB"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:theme="@style/ProgressBarStyle"
+        />
+
+    <TextView
+        android:id="@+id/errorTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Sorry, no data found!"
+        android:textColor="@color/hard"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

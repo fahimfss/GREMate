@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_word_set"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.fahim.gremate.ListWordsActivity"
+    android:background="@color/darkBack1"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listWordsCV"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp"
+        app:contentPadding="4dp"
+        app:cardBackgroundColor="@color/darkBack2"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <android.support.v7.widget.AppCompatImageButton
+                    android:id="@+id/addWordBtn"
+                    app:backgroundTint="@color/colorPrimary"
+                    android:tint="@color/darkFore4"
+                    android:src="@drawable/ic_ws_add_word"
+                    android:scaleType="fitCenter"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:onClick="addButtonClick"/>
+
+                <android.support.v7.widget.AppCompatImageButton
+                    android:id="@+id/searchBtn"
+                    android:src="@drawable/ic_ws_search"
+                    android:scaleType="fitCenter"
+                    app:backgroundTint="@color/colorPrimary"
+                    android:tint="@color/darkFore4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:onClick="searchButtonClick"/>
+
+                <android.support.v7.widget.AppCompatImageButton
+                    android:id="@+id/sortBtn"
+                    android:src="@drawable/ic_ws_reorder"
+                    android:scaleType="fitCenter"
+                    app:backgroundTint="@color/colorPrimary"
+                    android:tint="@color/darkFore4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:onClick="sortButtonClick"/>
+
+
+
+                <android.support.v7.widget.AppCompatImageButton
+                    android:id="@+id/practiceBtn"
+                    android:src="@drawable/ic_ws_exercise"
+                    android:scaleType="fitCenter"
+                    app:backgroundTint="@color/colorPrimary"
+                    android:tint="@color/darkFore4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:onClick="practiceButtonClick"/>
+
+                <android.support.v7.widget.AppCompatImageButton
+                    android:id="@+id/detailsBtn"
+                    android:src="@drawable/details"
+                    android:scaleType="fitCenter"
+                    app:backgroundTint="@color/colorPrimary"
+                    android:tint="@color/darkFore4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:onClick="detailsButtonClick"/>
+
+                <android.support.v7.widget.AppCompatImageButton
+                    android:id="@+id/saveBtn"
+                    android:src="@drawable/save"
+                    android:scaleType="fitCenter"
+                    app:backgroundTint="@color/colorPrimary"
+                    android:tint="@color/darkFore4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:onClick="saveButtonClick"/>
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:theme="@style/ProgressBarStyle"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:id="@+id/loadWordRV"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="5dp"
+                android:id="@+id/wordInListRV"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/ll1"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:scrollbarThumbVertical="@android:color/darker_gray"
+                android:scrollbarSize="5dp"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

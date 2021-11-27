@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/defDefTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkFore1"
+        android:textIsSelectable="true"
+        android:textSize="22sp"
+        />
+
+    <TextView
+        android:id="@+id/defSynTV"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkFore1"
+        android:textIsSelectable="true"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:id="@+id/defSentTV"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkFore1"
+        android:textIsSelectable="true"
+        android:textSize="12sp"
+        />
+
+</LinearLayout>
